@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Source+Code+Pro:wght@200;300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  background: white;
+}
+
+h1 {
+  font-family: "Dela Gothic One", cursive;
+}
+h2 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-size: 32px;
+}
+h3 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  font-size: 21px;
+}
+p,
+input,
+button {
+  font-family: "Source Code Pro", monospace;
+}
