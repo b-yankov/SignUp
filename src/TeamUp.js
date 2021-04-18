@@ -6,29 +6,13 @@ import BgVideo from "./BgVideo.mp4";
 import Play from "./assets/play.svg";
 import Share from "./assets/share.png";
 import Logo from "./assets/Logo.png";
+import { Heading } from "./sections/Heading";
 
 export const TeamUp = () => {
   return (
     <TeamUpStyles>
       <div className="content">
-        <div className="header">
-          <div className="head">
-            <div className="title">
-              <img src={Logo} alt="" />
-              <h1>Star Athlete</h1>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium eveniet quos architecto ipsam atque quae obcaecati
-              accusantium repudiandae nisi optio laboriosam quidem, doloribus
-              sunt suscipit quod fugiat eligendi commodi voluptatem!
-            </p>
-          </div>
-          <div className="input">
-            <input type="text" placeholder="Enter your email" />
-            <button>Join now</button>
-          </div>
-        </div>
+        <Heading />
         <div className="video-container">
           <div className="button">
             <img src={Play} alt="play button" />

@@ -1,29 +1,78 @@
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Source+Code+Pro:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap");
 
 * {
   padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  line-height: 150%;
 }
 body {
-  box-sizing: border-box;
   background: white;
+  font-family: "Roboto Slab", serif;
 }
-
+//Main title in Heading section
 h1 {
-  font-family: "Dela Gothic One", cursive;
+  font-size: 42px;
+  font-weight: 900;
 }
+//Title of the BigCta section
 h2 {
-  font-family: "Source Code Pro", monospace;
   font-weight: 700;
   font-size: 32px;
 }
+//Usp titles
 h3 {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 400;
-  font-size: 21px;
+  font-weight: 700;
+  font-size: 32px;
 }
-p,
+//Logo label
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+//Footer text
+h6 {
+  font-size: 18px;
+}
+p {
+  font-size: 20px;
+}
+.setPadding {
+  padding: 40px 2%;
+}
+
 input,
 button {
-  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+button {
+  cursor: pointer;
+  background: #85c441;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+input {
+  width: 60%;
+  max-width: 330px;
+  background: #dbdbdb;
+  color: #2f2f2f;
+  font-weight: 700;
+  ::placeholder {
+    color: #2f2f2f;
+  }
+}
+//set the input and the button to be in a row
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    margin-left: 20px;
+  }
 }
