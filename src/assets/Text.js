@@ -1,7 +1,7 @@
 export var data = {
   //Navigation components
   logoLabel: "Star Athlete",
-  buttonNav: "Join us",
+  buttonNav: "Become a star",
   //Heading section
   mainTitle: "Lorem ipsum dolor sit amet amet!",
   mainDescription:
@@ -11,7 +11,7 @@ export var data = {
   watchBtn: " watch video",
 
   //Video section
-  videoTitle: "Why Star Athlete?",
+  videoTitle: "What is Star Athlete?",
 
   //Usp section
   uspSectionTitle: "Enter usp section title here",

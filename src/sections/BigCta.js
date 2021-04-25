@@ -5,13 +5,19 @@ import { motion } from "framer-motion";
 
 import { data } from "../assets/Text.js";
 
-export const BigCta = () => {
+import { InputComponent } from "./InputComponent";
+
+export const BigCta = ({ value, setValue, modal, setModal }) => {
   return (
     <Styles className="setPadding">
       <h1>{data.bigCtaTitle}</h1>
       <div className="input">
-        <input type="text" placeholder={data.placeholder} />
-        <button>{data.buttonLabel}</button>
+        <InputComponent
+          modal={modal}
+          setModal={setModal}
+          value={value}
+          setValue={setValue}
+        />
       </div>
     </Styles>
   );
@@ -25,4 +31,7 @@ const Styles = styled(motion.div)`
   .input {
     margin-top: 30px;
   }
+  @media screen and (min-width: 1023px) {
+    margin: 100px 0;
+  } ;
 `;

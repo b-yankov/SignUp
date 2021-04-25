@@ -6,34 +6,61 @@ import { motion } from "framer-motion";
 import Logo from "../assets/Logo.png";
 import { data } from "../assets/Text.js";
 
+function ScrowToTop() {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+//Go to enter your email section
+function ScrowToCTA() {
+  window.scroll({
+    top: 2250,
+    behavior: "smooth",
+  });
+}
+
 export const Header = () => {
   return (
     <Styles className="setPadding">
-      <div className="logo">
-        <img src={Logo} alt="our logo" />
-        <h5>{data.logoLabel}</h5>
+      <div className="wholeNav">
+        <div className="logo" onClick={ScrowToTop}>
+          <img src={Logo} alt="our logo" />
+          <h5>{data.logoLabel}</h5>
+        </div>
+        <button onClick={ScrowToCTA}>{data.buttonNav}</button>
       </div>
-      <button>{data.buttonNav}</button>
-      
     </Styles>
   );
 };
 
 const Styles = styled(motion.div)`
-  padding-top: 0;
-  padding-bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: fixed;
+  justify-content: center;
+  position: sticky;
   top: 0;
   left: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+  z-index: 100000;
+  background: rgba(233, 236, 239, 0.55);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  max-width: 1400px;
   width: 100%;
-  height: 60px;
-  background-color: white;
+
+  .wholeNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+  }
   .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
     img {
       width: 40px;
       margin-right: 10px;

@@ -10,7 +10,7 @@ import { data } from "../assets/Text.js";
 
 export const Video = () => {
   return (
-    <Styles>
+    <Styles className="setPadding">
       <h1 className="why">{data.videoTitle}</h1>
       <div className="video-container">
         <div className="button">
@@ -35,6 +35,7 @@ const Styles = styled(motion.div)`
   justify-content: center;
   align-items: center;
   h1 {
+    text-align: center;
     margin-bottom: 100px;
   }
   .video-container {

@@ -14,7 +14,9 @@ export const Footer = () => {
       <div className="heading">
         <h6>{data.feedback}</h6>
         <span>{data.subText}</span>
-        <p>{data.email}</p>
+        <a href="contact@starathlete.com">
+          <p>{data.email}</p>
+        </a>
         <div className="logos">
           <img src={FB} alt="facebook" />
           <img src={IG} alt="instagram" />
@@ -40,7 +42,6 @@ const Styles = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 10px;
 
   .heading {
     text-align: center;
@@ -48,14 +49,23 @@ const Styles = styled(motion.div)`
       font-size: 14px;
       color: #d8d8d8;
     }
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease-out;
+      :hover {
+        color: #85c441;
+      }
+    }
     p {
       margin-top: 20px;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
+      cursor: pointer;
     }
   }
   .logos {
-    margin-top: 15px;
+    margin: 15px 0 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +81,7 @@ const Styles = styled(motion.div)`
     .rights {
       display: flex;
       justify-content: space-between;
-      font-size: 14px;
+      font-size: 12px;
       color: #b1b1b1;
     }
     .line {
@@ -81,4 +91,7 @@ const Styles = styled(motion.div)`
       margin-bottom: 8px;
     }
   }
+  @media screen and (min-width: 1023px) {
+    margin-top: 100px;
+  } ;
 `;

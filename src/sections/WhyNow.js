@@ -22,6 +22,11 @@ const Styles = styled(motion.div)`
   h3 {
     margin-bottom: 40px;
   }
+  .reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
   p {
     margin-top: 20px;
   }
