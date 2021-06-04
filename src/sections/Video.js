@@ -67,7 +67,7 @@ const Styles = styled(motion.div)`
     width: 100%;
     text-align: center;
     position: absolute;
-    z-index: 11;
+    z-index: 6;
     cursor: pointer;
     padding: 30px;
     height: 100%;

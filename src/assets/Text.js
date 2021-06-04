@@ -3,12 +3,12 @@ export var data = {
   logoLabel: "Star Athlete",
   buttonNav: "Become a star",
   //Heading section
-  mainTitle: "Lorem ipsum dolor sit amet amet!",
+  mainTitle: "Goodbye Agents. Hello Scouts",
   mainDescription:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet quos architect",
+    "Platform that aims to connect scouts and athletes and ease the process.",
   buttonLabel: "Join us",
   placeholder: "Enter your email",
-  watchBtn: " Watch video",
+  watchBtn: "Watch video",
 
   //Video section
   videoTitle: "What is Star Athlete?",

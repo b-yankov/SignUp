@@ -21,7 +21,7 @@ function ScrollDownWeb() {
 }
 function ScrollDownApp() {
   window.scroll({
-    top: 800,
+    top: 1550,
     behavior: "smooth",
   });
 }
@@ -32,7 +32,7 @@ export const Heading = ({ modal, setModal, value, setValue }) => {
   return (
     <Styles className="setPadding">
       <div>
-        {/* <img src={BgImage} alt="" /> */}
+        <img src={BgImage} alt="" />
         <h1>{data.mainTitle}</h1>
         <p>{data.mainDescription}</p>
         <div className="input">
@@ -71,6 +71,7 @@ const Styles = styled(motion.div)`
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     z-index: -100;
+    opacity: 0.4;
   }
   p {
     margin: 20px 0;
