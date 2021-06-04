@@ -15,13 +15,11 @@ export const Modal = ({ value, setModal }) => {
           <CheckIcon />
         </div>
         <h3>
-          Thank you, <br></br>
+          {data.succHeader}
+          <br></br>
           <span>{value}!</span>
         </h3>
-        <p>
-          You are one of the first members in our platfor. We will be keeping
-          you up to date with monthly emails.
-        </p>
+        <p>{data.succParagraph}</p>
         <button onClick={(e) => setModal(false)}>Continue</button>
       </div>
     </Styles>
@@ -70,7 +68,7 @@ const Styles = styled(motion.div)`
   h3 {
     margin: 20px 0 40px 0;
     span {
-      color: #85c441;
+      color: #0c2d7e;
       font-size: 21px;
     }
   }

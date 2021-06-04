@@ -8,7 +8,7 @@ export var data = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet quos architect",
   buttonLabel: "Join us",
   placeholder: "Enter your email",
-  watchBtn: " watch video",
+  watchBtn: " Watch video",
 
   //Video section
   videoTitle: "What is Star Athlete?",
@@ -30,6 +30,11 @@ export var data = {
 
   //
   bigCtaTitle: "Subscribe now for benefits!",
+
+  //Success texts
+  succHeader: "Thank you,",
+  succParagraph:
+    "You are one of the first members in our platfor. We will be keeping you up to date with monthly emails.",
 
   //Why sign up now
   whyNowTitle: "Why sign up now?",

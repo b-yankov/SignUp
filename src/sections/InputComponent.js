@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { data } from "../assets/Text.js";
+
 
 export const InputComponent = ({ modal, setModal, value, setValue }) => {
   function SubmitMail(e) {

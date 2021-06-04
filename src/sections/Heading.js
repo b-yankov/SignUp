@@ -11,6 +11,8 @@ import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 
 import { useMediaQuery } from "react-responsive";
 
+import BgImage from "../assets/background.png";
+
 function ScrollDownWeb() {
   window.scroll({
     top: 850,
@@ -30,6 +32,7 @@ export const Heading = ({ modal, setModal, value, setValue }) => {
   return (
     <Styles className="setPadding">
       <div>
+        {/* <img src={BgImage} alt="" /> */}
         <h1>{data.mainTitle}</h1>
         <p>{data.mainDescription}</p>
         <div className="input">
@@ -57,6 +60,18 @@ const Styles = styled(motion.div)`
   align-items: center;
   text-align: center;
   margin-top: 40px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    z-index: -100;
+  }
   p {
     margin: 20px 0;
     max-width: 600px;
@@ -65,16 +80,16 @@ const Styles = styled(motion.div)`
     margin-top: 40px;
   }
   .btn {
+    background: #0c2d7e;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-radius: 15px;
-    border: 2px solid #e9ecef;
+    padding: 10px 20px 10px 10px;
+    border-radius: 25px;
+    color: #e9ecef;
     transition: all 0.5s ease-out;
     :hover {
-      border: 2px solid #85c441;
       svg {
         transform: rotate(90deg);
       }

@@ -28,7 +28,9 @@ export const Header = () => {
           <img src={Logo} alt="our logo" />
           <h5>{data.logoLabel}</h5>
         </div>
-        <button onClick={ScrowToCTA}>{data.buttonNav}</button>
+        <button id="header-button" onClick={ScrowToCTA}>
+          {data.buttonNav}
+        </button>
       </div>
     </Styles>
   );
@@ -43,8 +45,8 @@ const Styles = styled(motion.div)`
   left: 0;
   padding-top: 10px;
   padding-bottom: 0;
-  z-index: 100000;
-  background: rgba(233, 236, 239, 0.55);
+  z-index: 10;
+  background: rgba(206, 212, 218, 0.55);
   backdrop-filter: blur(11px);
   -webkit-backdrop-filter: blur(11px);
   max-width: 1400px;
@@ -56,6 +58,9 @@ const Styles = styled(motion.div)`
     justify-content: space-between;
     width: 100%;
     height: 60px;
+  }
+  #header-button {
+    width: 160px;
   }
   .logo {
     display: flex;

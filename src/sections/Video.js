@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Modal from "@material-ui/core/Modal";
 
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -8,15 +9,29 @@ import Play from "../assets/play.svg";
 
 import { data } from "../assets/Text.js";
 
+import { FullVideoModal } from "./FullVideo";
+
 export const Video = () => {
+  const [openVideo, setOpenVideo] = useState(false);
+
+  const FullVideo = () => {
+    setOpenVideo(true);
+  };
+
+  useEffect(() => {
+    if (openVideo) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "visible";
+  }, [openVideo]);
+
   return (
     <Styles className="setPadding">
       <h1 className="why">{data.videoTitle}</h1>
       <div className="video-container">
         <div className="button">
-          <div className="button-bg">
+          <div className="button-bg" onClick={FullVideo}>
             <img src={Play} alt="play button" />
           </div>
+          {openVideo && <FullVideoModal setOpenVideo={setOpenVideo} />}
         </div>
         <div className="videoDiv">
           <div className="color-overlay"></div>

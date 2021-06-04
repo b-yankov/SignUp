@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="heading">
         <h6>{data.feedback}</h6>
         <span>{data.subText}</span>
-        <a href="contact@starathlete.com">
+        <a href="mailto:contact@starathlete.co.uk">
           <p>{data.email}</p>
         </a>
         <div className="logos">
