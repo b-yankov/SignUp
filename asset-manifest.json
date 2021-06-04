@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SignUp/static/css/main.c1c71d33.chunk.css",
-    "main.js": "/SignUp/static/js/main.a113017d.chunk.js",
-    "main.js.map": "/SignUp/static/js/main.a113017d.chunk.js.map",
+    "main.js": "/SignUp/static/js/main.7f800b61.chunk.js",
+    "main.js.map": "/SignUp/static/js/main.7f800b61.chunk.js.map",
     "runtime-main.js": "/SignUp/static/js/runtime-main.de31f983.js",
     "runtime-main.js.map": "/SignUp/static/js/runtime-main.de31f983.js.map",
     "static/js/2.ec52e4ce.chunk.js": "/SignUp/static/js/2.ec52e4ce.chunk.js",
@@ -12,13 +12,13 @@
     "static/js/2.ec52e4ce.chunk.js.LICENSE.txt": "/SignUp/static/js/2.ec52e4ce.chunk.js.LICENSE.txt",
     "static/media/BgVideo.e2680b81.mp4": "/SignUp/static/media/BgVideo.e2680b81.mp4",
     "static/media/Logo.06d303e2.png": "/SignUp/static/media/Logo.06d303e2.png",
-    "static/media/background.2a3b2c21.png": "/SignUp/static/media/background.2a3b2c21.png",
+    "static/media/background.4356558e.png": "/SignUp/static/media/background.4356558e.png",
     "static/media/play.a9cfb8fb.svg": "/SignUp/static/media/play.a9cfb8fb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.de31f983.js",
     "static/js/2.ec52e4ce.chunk.js",
     "static/css/main.c1c71d33.chunk.css",
-    "static/js/main.a113017d.chunk.js"
+    "static/js/main.7f800b61.chunk.js"
   ]
 }
