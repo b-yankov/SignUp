@@ -26,6 +26,7 @@ export const Video = () => {
   return (
     <Styles className="setPadding">
       <h1 className="why">{data.videoTitle}</h1>
+      <p>{data.videoSubTitle}</p>
       <div className="video-container">
         <div className="button">
           <div className="button-bg" onClick={FullVideo}>
@@ -51,7 +52,11 @@ const Styles = styled(motion.div)`
   align-items: center;
   h1 {
     text-align: center;
-    margin-bottom: 100px;
+  }
+  p {
+    max-width: 800px;
+    text-align: center;
+    margin: 20px 0 40px 0;
   }
   .video-container {
     position: relative;
@@ -67,7 +72,7 @@ const Styles = styled(motion.div)`
     width: 100%;
     text-align: center;
     position: absolute;
-    z-index: 6;
+
     cursor: pointer;
     padding: 30px;
     height: 100%;
@@ -86,6 +91,7 @@ const Styles = styled(motion.div)`
       align-items: center;
       justify-content: center;
       transition: all 0.5s ease;
+      z-index: 2;
     }
     :hover {
       .button-bg {

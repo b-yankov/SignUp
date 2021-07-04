@@ -32,6 +32,6 @@ const Styles = styled(motion.div)`
     margin-top: 30px;
   }
   @media screen and (min-width: 1023px) {
-    margin: 100px 0;
+    margin: 40px 0 100px 0;
   } ;
 `;

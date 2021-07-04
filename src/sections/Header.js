@@ -45,11 +45,11 @@ const Styles = styled(motion.div)`
   left: 0;
   padding-top: 10px;
   padding-bottom: 0;
-  z-index: 10;
-  background: rgba(206, 212, 218, 0.55);
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(11px);
   -webkit-backdrop-filter: blur(11px);
-  max-width: 1400px;
+  
   width: 100%;
 
   .wholeNav {
@@ -58,6 +58,7 @@ const Styles = styled(motion.div)`
     justify-content: space-between;
     width: 100%;
     height: 60px;
+    max-width: 1400px;
   }
   #header-button {
     width: 160px;

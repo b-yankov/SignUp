@@ -11,8 +11,6 @@ import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 
 import { useMediaQuery } from "react-responsive";
 
-import BgImage from "../assets/background.png";
-
 function ScrollDownWeb() {
   window.scroll({
     top: 850,
@@ -32,9 +30,10 @@ export const Heading = ({ modal, setModal, value, setValue }) => {
   return (
     <Styles className="setPadding">
       <div>
-        <img src={BgImage} alt="" />
         <h1>{data.mainTitle}</h1>
-        <p>{data.mainDescription}</p>
+        <div className="description">
+          <p>{data.mainDescription}</p>
+        </div>
         <div className="input">
           <InputComponent
             modal={modal}
@@ -53,6 +52,7 @@ export const Heading = ({ modal, setModal, value, setValue }) => {
 };
 
 const Styles = styled(motion.div)`
+  /* color: white; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,30 +60,32 @@ const Styles = styled(motion.div)`
   align-items: center;
   text-align: center;
   margin-top: 40px;
+  div {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: auto;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    z-index: -100;
-    opacity: 0.4;
+    p {
+      margin: 20px 0;
+      max-width: 500px;
+      text-align: center;
+    }
   }
-  p {
-    margin: 20px 0;
-    max-width: 600px;
-  }
+
   .input {
     margin-top: 40px;
   }
   .btn {
-    background: #0c2d7e;
+    background: #4ea8de;
     cursor: pointer;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 20px 10px 10px;

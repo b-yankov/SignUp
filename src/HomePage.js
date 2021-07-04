@@ -25,6 +25,9 @@ export const HomePage = () => {
   }, [modal]);
   return (
     <Styles>
+      <div className="bg">
+        <img src="" alt="" />
+      </div>
       {modal && <Modal value={value} setModal={setModal} />}
       <Header />
       <div className="content ">
@@ -58,4 +61,20 @@ const Styles = styled(motion.div)`
   .content {
     max-width: 1200px;
   }
+  /* .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    filter: blur(3px);
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1603046015506-ed6515399b2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1516&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+      width: 100%;
+    }
+  } */
 `;
